@@ -4,30 +4,19 @@ import randomColor from 'randomcolor';
 const lum = process.argv[3];
 const col = process.argv[2];
 
-const color = randomColor({
+const userColor = randomColor({
   luminosity: lum,
   hue: col,
 });
 function colorAndLog(str) {
-  console.log(chalk.hex(color).bold(str));
+  console.log(chalk.hex(userColor).bold(str));
 }
-
-// LONG VERSION
-// colorAndLog("##############################");
-// colorAndLog("##############################");
-// colorAndLog("##############################");
-// colorAndLog("########              ########");
-// colorAndLog(`########   ${color}    ########`);
-// colorAndLog("########              ########");
-// colorAndLog("##############################");
-// colorAndLog("##############################");
-// colorAndLog("##############################");
 
 colorAndLog(`##############################
 ##############################
 ##############################
 ########              ########
-########   ${color}    ########
+########   ${userColor}    ########
 ########              ########
 ##############################
 ##############################
