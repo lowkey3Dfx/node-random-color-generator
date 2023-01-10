@@ -12,7 +12,7 @@ function colorAndLog(str) {
   console.log(chalk.hex(color).bold(str));
 }
 
-//LONG VERSION
+// LONG VERSION
 // colorAndLog("##############################");
 // colorAndLog("##############################");
 // colorAndLog("##############################");

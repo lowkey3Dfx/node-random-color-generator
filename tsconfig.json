@@ -11,5 +11,5 @@
     "**/*.mjs",
     ".next/types/**/*.ts",
     "next-env.d.ts"
-  ]
+, ".eslintrc.cjs"  ]
 }
